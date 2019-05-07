@@ -1,0 +1,26 @@
+#edgenet {
+  .meta-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .meta-table {
+    padding: 0 12px 12px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 2px #ccc;
+    tr {
+      border: solid 1px #ccc;
+      th,
+      td {
+        padding: 12px;
+      }
+      th {
+        text-align: right;
+        width: 30%;
+        vertical-align: top;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  &.alert {
+    background: #cc4b37;
+    border: #cc4b37;
+    color: rgb(247, 247, 247);
+
+    &:hover {
+      background: lighten(#cc4b37, 5);
+      border:  darken(#cc4b37, 5);
+      color: rgb(247, 247, 247);
+    }
+  }
+}
