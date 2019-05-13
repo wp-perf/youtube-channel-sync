@@ -299,7 +299,7 @@ class Admin {
 				[ 'value' => 'off', 'label' => _x( 'Off', '', 'wpp-youtube' ) ],
 				[ 'value' => 'hourly', 'label' => _x( 'Hourly', '', 'wpp-youtube' ) ],
 				[ 'value' => 'twicedaily', 'label' => _x( 'Twice Daily', '', 'wpp-youtube' ) ],
-				[ 'value' => 'oncedaily', 'label' => _x( 'Once Daily', '', 'wpp-youtube' ) ],
+				[ 'value' => 'daily', 'label' => _x( 'Once Daily', '', 'wpp-youtube' ) ],
 			],
 			wpp_youtube()->options->get_update_frequency(),
 			[]
