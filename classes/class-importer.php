@@ -64,6 +64,9 @@ class Importer {
 
 		wpp_youtube()->options->set_latest_sync_log( $log_filepath );
 
+		// Set time limit to 15 mins.
+		@set_time_limit( 15 * MINUTE_IN_SECONDS );
+
 		$logger = new Logger( 'main' );
 
 		$stream = new StreamHandler( $log_filepath, Logger::DEBUG );

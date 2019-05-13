@@ -37,7 +37,7 @@ class Options {
 	const CONFIG_DEFAULTS = [
 		self::CONFIG_API_KEY            => '',
 		self::CONFIG_CHANNEL_ID         => '',
-		self::CONFIG_UPDATE_FREQUENCY   => 'oncedaily',
+		self::CONFIG_UPDATE_FREQUENCY   => 'daily',
 		self::CONFIG_ORPHANED_VIDEOS    => 'keep',
 		self::CONFIG_ORPHANED_PLAYLISTS => 'keep',
 		self::CONFIG_PLUGIN_CSS         => 'enable',
