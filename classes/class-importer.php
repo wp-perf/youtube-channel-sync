@@ -60,7 +60,7 @@ class Importer {
 			delete_option( self::SYNC_MUTEX );
 		}
 
-		$log_filepath = trailingslashit( $this->get_log_path() ) . date( 'Y-m-d-Gis' ) . '.log';
+		$log_filepath = trailingslashit( $this->get_log_path() ) . date( 'Y-m-d-Gis T' ) . '.log';
 
 		wpp_youtube()->options->set_latest_sync_log( $log_filepath );
 
@@ -71,7 +71,7 @@ class Importer {
 
 		$stream = new StreamHandler( $log_filepath, Logger::DEBUG );
 
-		$dateFormat = 'Y-m-d H:i:s';
+		$dateFormat = 'Y-m-d H:i:s T';
 		$output     = "%datetime% %level_name% %message%\n";
 		$formatter  = new LineFormatter( $output, $dateFormat );
 
